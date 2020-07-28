@@ -5,6 +5,13 @@ Gradleなどのビルドシステムを使ってない超素朴。
 
 JAVA 8でテスト。
 
+- [hello-java](#hello-java)
+- [構造](#構造)
+- [ビルドと実行](#ビルドと実行)
+  - [実行例](#実行例)
+- [参考](#参考)
+- [TODO](#todo)
+
 
 # 構造
 
@@ -13,7 +20,7 @@ JAVA 8でテスト。
 |-- META-INF
 |   `-- MANIFEST.MF
 |-- README.md
-|-- classes - `./classes`はbuild前に作っておくこと(これ以下は生成される)
+|-- classes - ./classes/はbuild前に作っておくこと(これより下は生成される)
 |   `-- heiwa4126
 |       `-- hello
 |           |-- Data.class - buildすると出来る
@@ -22,7 +29,7 @@ JAVA 8でテスト。
 |-- src
 |   `-- heiwa4126
 |       `-- hello
-|           |-- Data.java - Beansもどき
+|           |-- Data.java - Beansもどきクラス
 |           `-- Hello.java - mainのあるクラス
 `-- tools
     |-- build.sh
@@ -43,9 +50,10 @@ tools/build.sh
 ``` sh
 tools/run_jar.sh
 ```
-で実行。
+で実行。何をやってるかはshellの中身見てください。
 
 ## 実行例
+
 ```
 $ tools/run_jar.sh
 Hello World!
@@ -53,4 +61,10 @@ Hello World!
 ```
 
 # 参考
+
 [jarコマンドを使ってjarファイル、warファイルを作る方法 - Qiita](https://qiita.com/Qui/items/14961678ef939673f744)
+
+
+# TODO
+
+Mavenのディレクトリ構造にして、Gradleでビルドする。
