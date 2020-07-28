@@ -5,17 +5,17 @@ package heiwa4126.hello;
 
 public class Data {
 
-	protected String msg;
+  protected String msg;
 
-	public Data () {
+  public Data () {
     msg = "Hello World!";
   }
 
-	public void setMsg(String s) {
-		msg = s;
-	}
+  public void setMsg(String s) {
+    msg = s;
+  }
 
-	public String getMsg() {
-		return msg;
-	}
+  public String getMsg() {
+    return msg;
+  }
 }
