@@ -13,7 +13,7 @@ JAVA 8でテスト。
 |-- META-INF
 |   `-- MANIFEST.MF
 |-- README.md
-|-- classes
+|-- classes - `./classes`はbuild前に作っておくこと(これ以下は生成される)
 |   `-- heiwa4126
 |       `-- hello
 |           |-- Data.class - buildすると出来る
@@ -47,7 +47,7 @@ tools/run_jar.sh
 
 ## 実行例
 ```
-$ ./tools/run_jar.sh
+$ tools/run_jar.sh
 Hello World!
 世界の皆さんこんにちは
 ```
